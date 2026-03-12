@@ -72,46 +72,81 @@
   <footer class="player">
   <!-- Left Zone -->
   <div class="player-left">
-    <img src="images/player/cover.png" alt="Album Cover" class="track-cover">
-    <div class="track-info">
-      <span class="track-title">Track Title</span>
-      <span class="track-artist">Artist Name</span>
-    </div>
-    <!-- Optional action icons -->
-    <div class="track-actions">
-      <img src="images/player/heart-icon.png" alt="Like">
-      <img src="images/player/save-icon.png" alt="Save">
-    </div>
+    <div class="player-container">
+    <button class="btn-main pause" aria-label="Pause">
+      <img src="images/player/play-pause-icon.png" alt="Pause">
+    </button>
+
+    <button class="btn-control" aria-label="Previous">
+      <img src="images/player/prev-icon.png" alt="Previous">
+    </button>
+    <button class="btn-control" aria-label="Next">
+      <img src="images/player/next-icon.png" alt="Next">
+    </button>
+
+    <button class="btn-control" aria-label="Shuffle">
+      <img src="images/player/shuffle-icon.png" alt="Shuffle">
+    </button>
+    <button class="btn-control" aria-label="Repeat">
+      <img src="images/player/repeat-icon.png" alt="Repeat">
+    </button>
   </div>
 
-  <!-- Center Zone: Playback Controls -->
+  <div class="progress-container">
+    <span class="time-stamp">2:23</span>
+    <input type="range" class="progress-bar" value="50" min="0" max="100">
+    <span class="time-stamp">4:45</span>
+  </div>
+
+  <button class="btn-control volume" aria-label="Volume">
+    <img src="images/player/volume-icon.png" alt="Volume">
+  </button>
+</div>
+  </div>
+
+  <!-- Center Zone: album info -->
   <div class="player-center">
-    <div class="controls">
-      <img src="images/player/prev.png" alt="Previous">
-      <img src="images/player/play-pause.png" alt="Play/Pause">
-      <img src="images/player/next.png" alt="Next">
-    </div>
-    <div class="progress-bar">
-      <span class="time-left">0:00</span>
-      <div class="progress-track">
-        <div class="progress-fill"></div>
-      </div>
-      <span class="time-right">3:45</span>
-    </div>
+    <div class="album-info">
+      <img src="images/player/ram-cover.png" alt="Random Access Memories Cover" class="cover-art">
+      <div class="song-details">
+    <h2 class="song-title">Get Lucky</h2>
+    <p class="artist-name">Daft Punk</p>
+    <p class="album-name">Random Access Memories</p>
+  </div>
+</div>
   </div>
 
-  <!-- Right Zone: Volume / Actions -->
+  <!-- Right Zone: Actions -->
   <div class="player-right">
-    <div class="actions">
-      <img src="images/player/queue.png" alt="Queue">
-      <img src="images/player/device.png" alt="Device">
-    </div>
-    <div class="volume">
-      <img src="images/player/volume-icon.png" alt="Volume">
-      <div class="volume-bar">
-        <div class="volume-fill"></div>
-      </div>
-    </div>
+    <button class="btn-icon" aria-label="Like">
+    <img src="images/player/heart-icon.png" alt="Like">
+  </button>
+
+  <button class="btn-icon" aria-label="Add to Playlist">
+    <img src="images/player/add-playlist-icon.png" alt="Add to Playlist">
+  </button>
+
+  <button class="btn-icon" aria-label="Lyrics">
+    <img src="images/player/lyrics-icon.png" alt="Lyrics">
+  </button>
+
+  <button class="btn-icon" aria-label="Devices">
+    <img src="images/player/devices-icon.png" alt="Devices">
+  </button>
+
+  <button class="btn-icon" aria-label="More">
+    <img src="images/player/more-icon.png" alt="More">
+  </button>
+
+  <div class="divider"></div>
+
+  <button class="btn-special" aria-label="Special Action">
+    <img src="images/player/blue-circle-icon.png" alt="Special">
+  </button>
+
+  <button class="btn-icon" aria-label="Queue">
+    <img src="images/player/queue-icon.png" alt="Queue">
+  </button>
   </div>
 </footer>
 
